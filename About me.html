@@ -9,7 +9,25 @@
 <body>
 <center>
   <br>
-  <img src="pic.png" alt="Me" style="width:240px;height:250px;">
+  <img src="pic.png" alt="Me" style="width:250px;height:250px;">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   <br>
@@ -20,12 +38,86 @@
 
     <p style="font-size:100%; text-align:center;">
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       I am an undergraduate student at Texas A&M studying Electronic Systems Engineering Technology, <br>
       with a goal of working in the Broadcast Television industry as an Engineer. I currently work at <br>
       <a href="http://today.tamu.edu/2016/10/05/aggie-engineers-behind-the-scenes-on-game-day/" download="test">12th Man Productions</a> helping with all aspects engineering. If I am not working or <br>
-      studying, I enjoy watching movies, exercising, or reading.</p>
+      studying, I am spending time with my girlfriend watching movies, or reading.</p>
+
+      <!DOCTYPE HTML>
+      <html>
+      <head>
+      <style>
+      p {
+        text-align: center;
+        font-size: 60px;
+      }
+      </style>
+      </head>
+      <body>
+
+      <p id="demo"></p>
+
+      <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Dec 13, 2018 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+
+          // Get todays date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now an the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+
+          // If the count down is over, write some text
+          if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      </script>
+      </body>
+      </html>
+
 <p style="font-size:125%;" title = "Click to go to the main page">
  <a href="index.html">Home</a></p>
+
+
+
+
+
+
+
 
 </font>
 
